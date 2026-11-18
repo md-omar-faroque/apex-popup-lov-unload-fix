@@ -103,12 +103,6 @@ class of problem as Chrome rolls the deprecation out. Search your own code for
 `unload` listeners and prefer `pagehide` (and `visibilitychange`) for cleanup.
 See [docs/root-cause.md](docs/root-cause.md).
 
-## Credits
-
-Based on a community write-up of the issue and workaround shared on LinkedIn
-(https://lnkd.in/g5RwguNz). This repository adds a hardened script, tests and
-documentation.
-
 ## License
 
 [MIT](LICENSE)
