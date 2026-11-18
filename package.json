@@ -1,0 +1,26 @@
+{
+  "name": "apex-popup-lov-unload-fix",
+  "version": "1.0.0",
+  "description": "Workaround for Oracle APEX Popup LOV items returning no data on modal pages after Chrome blocks the unload event.",
+  "main": "src/popup-lov-cleanup.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build": "terser src/popup-lov-cleanup.js --compress --mangle --comments \"/^!/\" -o dist/popup-lov-cleanup.min.js"
+  },
+  "keywords": [
+    "oracle-apex",
+    "apex",
+    "popup-lov",
+    "modal-dialog",
+    "chrome",
+    "unload",
+    "permissions-policy",
+    "workaround"
+  ],
+  "license": "MIT",
+  "devDependencies": {
+    "jquery": "^3.7.1",
+    "jsdom": "^25.0.0",
+    "terser": "^5.31.0"
+  }
+}
